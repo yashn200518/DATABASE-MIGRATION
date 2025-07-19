@@ -23,4 +23,8 @@ Once the SQL file was cleaned, it was saved under a new name (Dump20250714_Postg
 
 The query executed successfully, with PostgreSQL displaying notices that certain tables didn’t exist (as expected on first-time import) and confirming that all rows were inserted correctly. After the script execution, the database was refreshed in pgAdmin, and both tables — it_sector and sector_projects — were visible under the public schema. Data from both tables was reviewed using the “View/Edit Data → All Rows” feature, confirming that the migration was accurate and successful.
 
+# OUTPUT
+
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/23fec53b-f997-4865-b79c-52041efd368d" />
+
 In conclusion, this migration process was completed manually without automation tools like pgloader. It offered detailed insight into the structural and syntactical differences between MySQL and PostgreSQL. It required editing the SQL dump to remove MySQL-only features and ensuring compatibility with PostgreSQL syntax. The final result was a clean, working PostgreSQL database with full data integrity preserved, demonstrating a successful and educational database migration.
